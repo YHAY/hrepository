@@ -39,22 +39,12 @@ int main(int argc, char ** argv)
   include_directories(${catkin_INCLUDE_DIRS} )
 
   add_executable(${PROJECT_NAME}_node src/test_cpp_node.cpp)
-  target_link_libraries(${PROJECT_NAME}_node
-  ${catkin_LIBRARIES}
-)
+  target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES} )
 
 8. 이 파일은 변경할 필요x
   $ vim package.xml
 
-  <?xml version="1.0"?>
-  <package format="2">
-    <name>test_cpp</name>
-    <version>0.0.0</version>
-    <description>The test_cpp package</description>
-    <maintainer email="haei3@todo.todo">haei3</maintainer>
-
     <license>TODO</license>
-
     <buildtool_depend>catkin</buildtool_depend>
     <build_depend>roscpp</build_depend>
     <build_depend>std_msgs</build_depend>
@@ -62,9 +52,7 @@ int main(int argc, char ** argv)
     <build_export_depend>std_msgs</build_export_depend>
     <exec_depend>roscpp</exec_depend>
     <exec_depend>std_msgs</exec_depend>
-
     <export></export>
-  </package>
 
 9. roscore
 10. rosrun test_cpp test_cpp_node
