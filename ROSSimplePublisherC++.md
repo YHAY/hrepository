@@ -45,8 +45,8 @@
 
 <hr/>
 8. 이 파일은 변경할 필요x
+
   $ vim package.xml
-<pre>
     <buildtool_depend>catkin</buildtool_depend>
     <build_depend>roscpp</build_depend>
     <build_depend>std_msgs</build_depend>
@@ -55,8 +55,6 @@
     <exec_depend>roscpp</exec_depend>
     <exec_depend>std_msgs</exec_depend>
     <export></export>
-</pre>
 
-<hr/>
 9. roscore
 10. rosrun test_cpp test_cpp_node
