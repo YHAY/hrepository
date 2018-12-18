@@ -47,13 +47,21 @@
 8. 이 파일은 변경할 필요x
 
   $ vim package.xml
+
     <buildtool_depend>catkin</buildtool_depend>
+
     <build_depend>roscpp</build_depend>
+
     <build_depend>std_msgs</build_depend>
+
     <build_export_depend>roscpp</build_export_depend>
+
     <build_export_depend>std_msgs</build_export_depend>
+
     <exec_depend>roscpp</exec_depend>
+
     <exec_depend>std_msgs</exec_depend>
+    
     <export></export>
 
 9. roscore
